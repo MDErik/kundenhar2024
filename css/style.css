@@ -1,0 +1,73 @@
+body{
+    margin: auto;
+}
+
+div#MWrapper{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 15% 37.5% 37.5% 10%;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-areas: 
+    'hd hd nv'
+    'mn sc sc'
+    'mn as as'
+    'ft ft ft';
+}
+
+header{
+    grid-area: hd;
+    background-color: yellow;
+}
+nav{
+    grid-area: nv;
+    background-color: yellowgreen;
+}
+main{
+    grid-area: mn;
+    background-color: aquamarine;
+}
+section{
+    grid-area: sc;
+    background-color: blueviolet;
+}
+aside{
+    grid-area: as;
+    background-color: orange;
+}
+footer{
+    grid-area: ft;
+    background-color: red;
+}
+
+div#AWrapper{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 15% 75% 10%;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-areas: 
+    'hd hd nv'
+    'mn sc sc'
+    'ft ft ft';
+}
+main#Amn{
+    grid-area: mn;
+    background-color: aquamarine;
+}
+section#Asc{
+    grid-area: sc;
+    background-color: greenyellow;
+}
+div#FWrapper{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 15% 75% 10%;
+    grid-template-columns: 75% 25%;
+    grid-template-areas: 
+    'hd nv'
+    'mn mn'
+    'ft ft';
+}
+main#Fmn{
+    grid-area: mn;
+    background-color: goldenrod;
+}
