@@ -2,22 +2,21 @@ body{
     margin: auto;
 }
 
+/*
+    - Everything related to the homepage. -
+*/
 div#MWrapper{
     display: grid;
     height: 100vh;
     grid-template-rows: 15% 37.5% 37.5% 10%;
-    grid-template-columns: 50% 20% 30%;
+    grid-template-columns: 30% 20% 50%;
     grid-template-areas: 
-    'hd hd nv'
-    'mn sc sc'
-    'mn as as'
+    'hd nv nv'
+    'mn mn sc'
+    'mn mn as'
     'ft ft ft';
 }
 
-header{
-    grid-area: hd;
-    background-color: yellow;
-}
 nav{
     grid-area: nv;
     background-color: yellowgreen;
@@ -34,21 +33,23 @@ aside{
     grid-area: as;
     background-color: orange;
 }
-footer{
-    grid-area: ft;
-    background-color: red;
-}
+
+
+/*
+    - Everything related to the article-page. -
+*/
 
 div#AWrapper{
     display: grid;
     height: 100vh;
     grid-template-rows: 15% 75% 10%;
-    grid-template-columns: 50% 20% 30%;
+    grid-template-columns: 30% 20% 50%;
     grid-template-areas: 
-    'hd hd nv'
-    'mn sc sc'
-    'ft ft ft';
+    'hd nv nv '
+    'mn mn sc '
+    'ft ft ft ';
 }
+
 main#Amn{
     grid-area: mn;
     background-color: aquamarine;
@@ -57,11 +58,16 @@ section#Asc{
     grid-area: sc;
     background-color: greenyellow;
 }
+
+/*
+    - Everything related to the fastigheter-page. -
+*/
+
 div#FWrapper{
     display: grid;
     height: 100vh;
     grid-template-rows: 15% 75% 10%;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 30% 70%;
     grid-template-areas: 
     'hd nv'
     'mn mn'
@@ -71,3 +77,18 @@ main#Fmn{
     grid-area: mn;
     background-color: goldenrod;
 }
+
+/*
+    - Everything Miscellaneous / Universal. -
+*/
+header{
+    grid-area: hd;
+    background-color: yellow;
+    font-family: 'Comfortaa', Times, serif;
+}
+
+footer{
+    grid-area: ft;
+    background-color: red;
+}
+
