@@ -1,8 +1,16 @@
+/*
+    - Everything Miscellaneous. -
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 
 body{
     margin: auto;
     
+}
+
+::placeholder{
+    color: white;
 }
 
 /*
@@ -11,7 +19,7 @@ body{
 div#MWrapper{
     display: grid;
     height: 100vh;
-    grid-template-rows: 15% 40% 40% 10%;
+    grid-template-rows: 15% 50% 50% 20%;
     grid-template-columns: 30% 30% 40%;
     grid-template-areas: 
     'hd nv nv'
@@ -22,7 +30,6 @@ div#MWrapper{
 
 main{
     grid-area: mn;
-    text-align: center;
     padding: 0px 10px 0px 10px;
 }
 section{
@@ -34,6 +41,27 @@ aside{
     background-color: orange;
 }
 
+#MIntro{
+    border-style: solid;
+    border-color: #3498db;
+    border-radius: 15px;
+    padding: 1%;
+}
+
+#searchStyle{
+    border-radius: 15px;
+    background-color: #3498db;
+    color: white;
+    font-family: 'Comfortaa';
+    border-style: none;
+}
+
+#Searchbar{
+    display: flex;
+    justify-content: center;
+    margin: 10% 0% ;
+}
+
 
 /*
     - Everything related to the article-page. -
@@ -42,7 +70,7 @@ aside{
 div#AWrapper{
     display: grid;
     height: 100vh;
-    grid-template-rows: 15% 75% 10%;
+    grid-template-rows: 15% 75% 20%;
     grid-template-columns: 30% 20% 50%;
     grid-template-areas: 
     'hd nv nv '
@@ -52,7 +80,7 @@ div#AWrapper{
 
 main#Amn{
     grid-area: mn;
-    background-color: aquamarine;
+    background-color: orange;
 }
 section#Asc{
     grid-area: sc;
@@ -66,7 +94,7 @@ section#Asc{
 div#FWrapper{
     display: grid;
     height: 100vh;
-    grid-template-rows: 15% 75% 10%;
+    grid-template-rows: 15% 75% 20%;
     grid-template-columns: 30% 70%;
     grid-template-areas: 
     'hd nv'
@@ -75,15 +103,15 @@ div#FWrapper{
 }
 main#Fmn{
     grid-area: mn;
-    background-color: goldenrod;
+    background-color: blueviolet;
 }
 
 /*
-    - Everything Miscellaneous / Universal. -
+    - Everything Related to the header. -
 */
 header{
     grid-area: hd;
-    background-color: yellow;
+    padding: 6px 4px 0px 4px;
 }
 
 #img_logo{
@@ -91,36 +119,15 @@ header{
     height: 80%;
 }
 
+/*
+    - Everything related to the nav. -
+*/
+
 nav{
     grid-area: nv;
-    background-color: yellowgreen;
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-footer{
-    grid-area: ft;
-    background-color: red;
-}
-
-.rubrik{
-    font-family: 'Comfortaa', Times, Arial;
-    font-size: 40px;
-    font-weight: 700;
-    color: #3498db;
-}
-
-.underrubrik{
-    font-family: 'Comfortaa', Times, Arial;
-    font-size: 25px;
-    color: #3498db;
-}
-
-.breadtext{
-    font-family: 'Comfortaa', Times, Arial;
-    font-size: 15px;
-    color: #3498db;
 }
 
 .button{
@@ -138,17 +145,18 @@ footer{
 .button:hover{
     background-color: white;
     color: #3498db;
-    filter: hue-rotate(#3498db);
+    border-style: solid;
+    border-color: #3498db;
 }
 
-#img_btn{
+.img_btn{
     display: grid;
     width: 30px;
     height: 30px;
     filter: invert(100%);
 }
 
-#img_btn_alt{
+.img_btn_alt{
     display: grid;
     padding: 3px;
     width: 25px;
@@ -156,3 +164,58 @@ footer{
     filter: invert(100%);
 }
 
+/*
+    - Everything related to the footer. -
+*/
+
+footer{
+    grid-area: ft;
+    background-color: #3498db;
+    font-family: 'Comfortaa', Times, Arial;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ft_bdr{
+    width: 175px;
+    border-style: inset;
+    border-radius: 5px;
+    border-left: 5px solid #185b72;
+    border-top: 5px solid #185b72;
+    border-right: 5px solid #37b7ba;
+    border-bottom: 5px solid #37b7ba;
+    color: white;
+
+}
+
+.no_style{
+    align-items: center;
+    list-style-type: none;
+    margin: 5px;
+    padding: 5px;
+}
+
+/*
+    - Everything related to fonts. -
+*/
+
+.rubrik{
+    font-family: 'Comfortaa', Times, Arial;
+    font-size: 34px;
+    font-weight: 700;
+    color: #3498db;
+    text-align: center;
+}
+
+.underrubrik{
+    font-family: 'Comfortaa', Times, Arial;
+    font-size: 21px;
+    color: #3498db;
+}
+
+.breadtext{
+    font-family: 'Comfortaa', Times, Arial;
+    font-size: 13px;
+    color: #3498db;
+}
