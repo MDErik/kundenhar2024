@@ -71,11 +71,11 @@ div#AWrapper{
     display: grid;
     height: 100vh;
     grid-template-rows: 15% 75% 20%;
-    grid-template-columns: 30% 20% 50%;
+    grid-template-columns: 30% 20% 20% 30%;
     grid-template-areas: 
-    'hd nv nv '
-    'mn mn sc '
-    'ft ft ft ';
+    'hd nv nv nv'
+    'mn mn mn sc'
+    'ft ft ft ft';
 }
 
 main#Amn{
@@ -94,7 +94,7 @@ section#Asc{
 div#FWrapper{
     display: grid;
     height: 100vh;
-    grid-template-rows: 15% 75% 20%;
+    grid-template-rows: 15% 100% 20%;
     grid-template-columns: 30% 70%;
     grid-template-areas: 
     'hd nv'
@@ -103,7 +103,8 @@ div#FWrapper{
 }
 main#Fmn{
     grid-area: mn;
-    background-color: blueviolet;
+    display: grid;
+    height: 100vh;
 }
 
 /*
