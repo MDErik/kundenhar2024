@@ -1,11 +1,12 @@
 /*
-    - Everything Miscellaneous. -
+    - Everything Miscellaneous + Variables. -
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 
 body{
     margin: auto;
+    --themeColor : #3498db;
 }
 
 ::placeholder{
@@ -13,7 +14,7 @@ body{
 }
 
 /*
-    - Everything related to the homepage. -
+    - Everything related to the homepage/landingpage. -
 */
 div#MWrapper{
     display: grid;
@@ -30,26 +31,30 @@ div#MWrapper{
 main{
     grid-area: mn;
     padding: 0px 10px 0px 10px;
+    
 }
 section{
     grid-area: sc;
-    background-color: blueviolet;
+    
 }
 aside{
     grid-area: as;
-    background-color: orange;
+    border-style: solid;
+    border-color: var(--themeColor);
+    border-radius: 15px;
+    padding: 1%;
 }
 
-#MIntro{
+.MIntro{
     border-style: solid;
-    border-color: #3498db;
+    border-color: var(--themeColor);
     border-radius: 15px;
     padding: 1%;
 }
 
 #searchStyle{
     border-radius: 15px;
-    background-color: #3498db;
+    background-color: var(--themeColor);
     color: white;
     font-family: 'Comfortaa';
     border-style: none;
@@ -83,7 +88,7 @@ main#Amn{
 section#Asc{
     grid-area: sc;
     background-color: white;
-    border-left: solid #3498db 5px;
+    border-left: solid var(--themeColor) 5px;
     padding: 0px 5px 0px 10px;
 }
 .art_new{
@@ -92,7 +97,7 @@ section#Asc{
     flex-direction: column;
     margin-top: 3%;
     border-style: solid ;
-    border-color: #3498db;
+    border-color: var(--themeColor);
     border-radius: 15px;
     padding: 1%;
 }
@@ -174,7 +179,7 @@ nav{
 }
 
 .button{
-    background-color: #3498db;
+    background-color: var(--themeColor);
     color: white;
     padding: 16px 32px;
     border-radius: 15px;
@@ -187,9 +192,9 @@ nav{
 
 .button:hover{
     background-color: white;
-    color: #3498db;
+    color: var(--themeColor);
     border-style: solid;
-    border-color: #3498db;
+    border-color: var(--themeColor);
 }
 
 .img_btn{
@@ -213,7 +218,7 @@ nav{
 
 footer{
     grid-area: ft;
-    background-color: #3498db;
+    background-color: var(--themeColor);
     font-family: 'Comfortaa', Times, Arial;
     display: flex;
     justify-content: space-around;
@@ -247,18 +252,18 @@ h1{
     font-family: 'Comfortaa', Times, Arial;
     font-size: 34px;
     font-weight: 700;
-    color: #3498db;
+    color: var(--themeColor);
     text-align: center;
 }
 
 h2{
     font-family: 'Comfortaa', Times, Arial;
     font-size: 21px;
-    color: #3498db;
+    color: var(--themeColor);
 }
 
 h3{
     font-family: 'Comfortaa', Times, Arial;
     font-size: 13px;
-    color: #3498db;
+    color: var(--themeColor);
 }
